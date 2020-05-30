@@ -1,4 +1,4 @@
-package baron.todo.know;
+package baron.knowledge.enums;
 
 /**
  * 枚举（enum）类型是Java 5新增的特性。<br>

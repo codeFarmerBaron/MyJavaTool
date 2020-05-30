@@ -1,4 +1,4 @@
-package baron.todo.know;
+package baron.knowledge.enums;
 
 /**
  * 枚举（enum）类型是Java 5新增的特性。<br>
@@ -23,17 +23,12 @@ enum Season implements SeasonInterface{
 	}
 
 	public int getCode() {
-		return code;
+		return this.code;
 	}
 	public String getName() {
-		return name;
+		return this.name;
 	}
-	public void setCode(int code) {
-		this.code = code;
-	}
-	public void setName(String name) {
-		this.name = name;
-	}
+
 	@Override
 	public String toString() {
 		return this.getName()+"---"+this.getCode();

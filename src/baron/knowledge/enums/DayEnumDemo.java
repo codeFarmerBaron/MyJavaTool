@@ -1,4 +1,4 @@
-package baron.todo.know;
+package baron.knowledge.enums;
 
 /**
  * 枚举（enum）类型是Java 5新增的特性。<br>
@@ -24,14 +24,9 @@ enum Day{
 	public String getName() {
 		return name;
 	}
-	public void setName(String name) {
-		this.name = name;
-	}
+	
 	public int getIndex() {
 		return index;
-	}
-	public void setIndex(int index) {
-		this.index = index;
 	}
 }
 

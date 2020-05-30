@@ -1,4 +1,4 @@
-package baron.todo.mail;
+package baron.util.mail;
 
 import java.net.URI;
 import java.net.URISyntaxException;
@@ -16,7 +16,7 @@ import microsoft.exchange.webservices.data.credential.WebCredentials;
 import microsoft.exchange.webservices.data.property.complex.MessageBody;
 
 
-public class ExchangeClient {
+public class ExchangeEmail {
 
 
     private final String hostname;
@@ -31,7 +31,7 @@ public class ExchangeClient {
     private final List<String> attachments;
     private final String message;
 
-    private ExchangeClient(ExchangeClientBuilder builder) {
+    private ExchangeEmail(ExchangeClientBuilder builder) {
         this.hostname = builder.hostname;
         this.exchangeVersion = builder.exchangeVersion;
         this.domain = builder.domain;
@@ -261,8 +261,8 @@ public class ExchangeClient {
          *
          * @return an EmailApacheUtils object.
          */
-        public ExchangeClient build() {
-            return new ExchangeClient(this);
+        public ExchangeEmail build() {
+            return new ExchangeEmail(this);
         }
     }
 
